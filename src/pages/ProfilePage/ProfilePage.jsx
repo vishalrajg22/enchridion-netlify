@@ -47,7 +47,7 @@ class ProfilePage extends React.Component {
       <div>
         <Header
           color="transparent"
-          brand="Geetika's Blog"
+          brand="Engimatic Enchridion"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{

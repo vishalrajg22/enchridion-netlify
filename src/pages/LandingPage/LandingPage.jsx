@@ -35,7 +35,7 @@ class LandingPage extends React.Component {
         <Header
           color="transparent"
           routes={dashboardRoutes}
-          brand="Geetika's Blog"
+          brand="Engimatic Enchridion"
           rightLinks={<HeaderLinks />}
           fixed
           changeColorOnScroll={{
