@@ -15,9 +15,11 @@ import Parallax from "components/Parallax/Parallax.jsx"
 import Card from "components/Card/Card.jsx"
 import CardBody from "components/Card/CardBody.jsx"
 import CardHeader from "components/Card/CardHeader.jsx"
-import Favorite from '@material-ui/icons/Favorite';
+import Favorite from "@material-ui/icons/Favorite"
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.jsx"
+
+import { Link } from "gatsby";
 
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx"
 
@@ -44,12 +46,15 @@ class Components extends React.Component {
     const { classes, ...rest } = this.props
     const picstyle = {
       width: "100%",
-      height: "auto"
-    };
+      height: "auto",
+    }
+    const hstyle = {
+      "text-align": "center",
+    }
     const pstyle = {
       "text-align": "justify",
-      "text-justify": "inter-word"
-    };
+      "text-justify": "inter-word",
+    }
     return (
       <div>
         <Header
@@ -83,36 +88,52 @@ class Components extends React.Component {
             <div className={classes.container}>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
-                  <h3 className={classes.title}>Blog Posts</h3>
+                  <h1 style={hstyle} className={classes.description}>
+                    Blog Posts
+                  </h1>
                 </GridItem>
               </GridContainer>
               <GridContainer justify="center">
                 <GridItem xs={12} sm={12} md={8}>
                   <Card className={classes[this.state.cardAnimaton]}>
                     <CardHeader color="primary" className={classes.cardHeader}>
-                      <h4>A question from a girl to the world out there</h4>
+                      <h4>A question from a girl to the world out there...</h4>
                     </CardHeader>
-                    <img className={classes.imgCardTop} src={girl} alt="Card-img-cap" style={picstyle} />
+                    <img
+                      className={classes.imgCardTop}
+                      src={girl}
+                      alt="Card-img-cap"
+                      style={picstyle}
+                    />
                     <CardBody>
                       <p style={pstyle}>
-                      I’m not a feminist neither I am against about the concept
-                      of the support given to girls for their wellbeing but I’m
-                      somewhere in between that. I always wonder what is the
-                      real value of a girl in this society. Is it just treated
-                      like other human beings or does it have a unique place?
-                      From the day a girl is born till the day she dies, her
-                      existence is doubted. Let’s take a deeper look into it.
-                      Let’s see where this end and what we can conclude. I’m not
-                      telling you that after reading this all of them are going
-                      to be having a similar thought. Some might get offended.
-                      Some might even feel this was a waste of time. But what’s
-                      wrong in trying to know instead of not trying at all.
+                        I’m not a feminist neither I am against about the
+                        concept of the support given to girls for their
+                        wellbeing but I’m somewhere in between that. I always
+                        wonder what is the real value of a girl in this society.
+                        Is it just treated like other human beings or does it
+                        have a unique place? From the day a girl is born till
+                        the day she dies, her existence is doubted. Let’s take a
+                        deeper look into it. Let’s see where this end and what
+                        we can conclude. I’m not telling you that after reading
+                        this all of them are going to be having a similar
+                        thought. Some might get offended. Some might even feel
+                        this was a waste of time. But what’s wrong in trying to
+                        know instead of not trying at all.
                       </p>
                       <div align="left">
-                      <Button className={classes.right} size="lg" color="rose" round><Favorite /> Read More...</Button>
+                        <Link to="/post-page" className={classes.link}>
+                          <Button
+                            className={classes.right}
+                            size="lg"
+                            color="rose"
+                            round
+                          >
+                            <Favorite /> Read More...
+                          </Button>
+                        </Link>
                       </div>
                     </CardBody>
-                    
                   </Card>
                 </GridItem>
               </GridContainer>

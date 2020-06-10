@@ -7,6 +7,7 @@ import 'typeface-roboto';
 import 'typeface-roboto-slab';
 import ProfilePage from "./ProfilePage/ProfilePage.jsx";
 import HomePage from "./HomePage/HomePage.jsx";
+import PostPage from "./PostPage/PostPage.jsx";
 
 let hist = createMemoryHistory();
 
@@ -15,6 +16,7 @@ export default () => (
     <Switch>
       <Route path="/" component={HomePage} />
       <Route path="/profile-page" component={ProfilePage} />
+      <Route path="/post-page" component={PostPage} />
     </Switch>
   </Router>
 );
