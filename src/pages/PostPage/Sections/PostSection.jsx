@@ -209,7 +209,7 @@ class PostSection extends React.Component {
               having peace more peaceful than providing peace to someone else…
             </p>
 
-            <h3 style={{"text-align": "right"}}>- Geetika Agarwal</h3>
+            <h4 style={{"text-align": "right"}}>- Geetika Agarwal</h4>
 
           </GridItem>
         </GridContainer>
