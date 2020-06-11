@@ -49,7 +49,7 @@ class LoginPage extends React.Component {
         <Header
           absolute
           color="transparent"
-          brand="Engimatic Enchridion"
+          brand="Engimatic Enchiridion"
           rightLinks={<HeaderLinks />}
           {...rest}
         />

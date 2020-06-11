@@ -25,7 +25,7 @@ class PostPage extends React.Component {
     return (
       <div>
         <Header
-          brand="Engimatic Enchridion"
+          brand="Engimatic Enchiridion"
           rightLinks={<HeaderLinks />}
           fixed
           color="transparent"
@@ -40,7 +40,7 @@ class PostPage extends React.Component {
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>The Enigmatic Enchridion</h1>
+                  <h1 className={classes.title}>The Enigmatic Enchiridion</h1>
                   <h3 className={classes.subtitle}>
                     The words which were never spoken.
                   </h3>
