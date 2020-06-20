@@ -21,7 +21,7 @@ class WishSection extends React.Component {
           <GridItem xs={12} sm={12} md={10}>
             <div>
               <h2 className={classes.title}>
-                A question from a girl to the world out there...
+                A pretty girl who made him smile...
               </h2>
             </div>
             <div>
