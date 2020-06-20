@@ -153,7 +153,12 @@ class WishSection extends React.Component {
 
               <h4 style={{ "text-align": "right" }}>- Vishal Raj</h4>
             </div>
-           
+            <div className={classes.typo} style={{ "text-align": "left" }}>
+              <Quote
+                text="Life is not interesting... People in the life make it interesting"
+                author="Vishal Raj"
+              />
+            </div>
           </GridItem>
         </GridContainer>
       </div>
