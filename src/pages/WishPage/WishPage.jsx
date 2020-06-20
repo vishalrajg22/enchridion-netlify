@@ -35,7 +35,7 @@ class WishPage extends React.Component {
           }}
           {...rest}
         />
-        <Parallax image={require("assets/img/girl.jpg")}>
+        <Parallax image={require("assets/img/panda.jpg")}>
           <div className={classes.container}>
             <GridContainer>
               <GridItem>
